@@ -28,7 +28,8 @@ export default class ConfigModule extends Module {
 				itm.children.push({
 					name: "Configuration",
 					url: "/configuration/$/$",
-					icon: "cil-settings"
+					icon: "cil-settings",
+					resource: 'lmio:config:access' //TODO: resource may change
 				});
 				isMaintenancePresent = true;
 			}
@@ -43,7 +44,8 @@ export default class ConfigModule extends Module {
 					{
 						name: "Configuration",
 						url: "/configuration/$/$",
-						icon: "cil-settings"
+						icon: "cil-settings",
+						resource: 'lmio:config:access' //TODO: resource may change
 					}
 				]
 			});

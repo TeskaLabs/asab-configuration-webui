@@ -45,7 +45,7 @@ function ConfigList(props) {
 		{
 			name: t('ASABConfig|Name'),
 			key: "name",
-			link: { pathname: `/config/${configType}/`, key: "name" }
+			link: { pathname: `/configuration/${configType}/`, key: "name" }
 		},
 		{
 			name: ' ',
@@ -212,7 +212,7 @@ function CreateConfigCard(props) {
 				config_created: true
 			});
 			history.push({
-				pathname: `/config/${props.configType}/${configName}`
+				pathname: `/configuration/${props.configType}/${configName}`
 			});
 		}
 		catch(e) {

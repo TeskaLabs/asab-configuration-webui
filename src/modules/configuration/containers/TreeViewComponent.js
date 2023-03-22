@@ -52,11 +52,11 @@ export function TreeViewComponent(props) {
 		if (splitKey.length > 1) {
 			// Push params to the URL
 			history.push({
-				pathname: `/config/${splitKey[0]}/${splitKey[1]}`,
+				pathname: `/configuration/${splitKey[0]}/${splitKey[1]}`,
 			})
 		} else {
 			history.push({
-				pathname: `/config/${splitKey[0]}/!manage`,
+				pathname: `/configuration/${splitKey[0]}/!manage`,
 			})
 		}
 		setChosenPanel('configurator')
