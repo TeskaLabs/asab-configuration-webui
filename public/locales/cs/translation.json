@@ -1,4 +1,15 @@
 {
+	"i18n": {
+		"language": {
+			"en": "English",
+			"cs": "Česky"
+		}
+	},
+	"AboutCard": {
+		"Website": "Webová stránka",
+		"Vendor": "Výrobce"
+	},
+
 	"AccessControlScreen": {
 		"Access control": "Přístupová oprávnění",
 		"See your details": "Zde jsou zobrazena Vaše přístupová oprávnění",
@@ -74,6 +85,9 @@
 		"Actions": "Akce",
 		"Search": "Hledat"
 	},
+	"HomeContainer": {
+		"Welcome to ASAB Configuration": "Vítejte v ASAB Configuration"
+	},
 
 	"ASABConfigService": {
 		"Incorrect/invalid config file downloaded": "Došlo ke stažení neplatné konfigurace",
@@ -111,6 +125,20 @@
 		"Version": "Verze",
 		"Repository": "Repozitář"
 	},
+
+	"Breadcrumbs": {
+		"Home": "Domů",
+		"Configuration": "Konfigurace",
+		"About": "O aplikaci",
+		"Access control": "Přístupová oprávnění"
+	},
+	"Sidebar": {
+		"Home": "Domů",
+		"About": "O Aplikaci",
+		"Maintenance": "Správa",
+		"Configuration": "Konfigurace"
+	},
+
 	"Showing item(s)": "{{ from }} - {{ to }} z {{ total }} položek",
 	"You do not have access rights to perform this action": "Váš přístup je omezen, nemáte dostatečná oprávnění",
 	"Items per page": "Položek na stránku",

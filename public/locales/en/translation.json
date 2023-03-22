@@ -1,4 +1,15 @@
 {
+	"i18n": {
+		"language": {
+			"en": "English",
+			"cs": "Česky"
+		}
+	},
+	"AboutCard": {
+		"Website": "Website",
+		"Vendor": "Vendor"
+	},
+
 	"AccessControlScreen": {
 		"Access details": "Access control",
 		"See your details": "You can see your access permissions here",
@@ -72,6 +83,9 @@
 		"Actions": "Actions",
 		"Search": "Search"
 	},
+	"HomeContainer": {
+		"Welcome to ASAB Configuration": "Welcome to ASAB Configuration"
+	},
 
 	"ASABConfigService": {
 		"Incorrect/invalid config file downloaded": "Incorrect/invalid config file downloaded",
@@ -109,6 +123,20 @@
 		"Version": "Version",
 		"Repository": "Repository"
 	},
+
+	"Breadcrumbs": {
+		"Home": "Home",
+		"Configuration": "Configuration",
+		"About": "About",
+		"Access control": "Access control"
+	},
+	"Sidebar": {
+		"Home": "Home",
+		"About": "About",
+		"Maintenance": "Maintenance",
+		"Configuration": "Configuration"
+	},
+
 	"Showing item(s)": "{{ from }} - {{ to }} of {{ total }} item(s)",
 	"You do not have access rights to perform this action": "You do not have access rights to perform this action",
 	"Items per page": "Items per page",
