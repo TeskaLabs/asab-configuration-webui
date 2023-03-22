@@ -1,0 +1,57 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { Application } from 'asab-webui';
+import { HashRouter } from 'react-router-dom';
+
+// Configuration
+let ConfigDefaults = {
+	title: "ASAB Configuration",
+	vendor: "TeskaLabs",
+	website: "https://teskalabs.com",
+	email: "info@teskalabs.com",
+	brand_image: {
+		full: "media/logo/header-full.svg",
+		minimized: "media/logo/header-minimized.svg",
+	},
+	sidebarLogo: {
+		full: "media/logo/sidebarlogo-full.svg",
+		minimized: "media/logo/sidebarlogo-minimized.svg"
+	},
+	i18n: {
+		fallbackLng: 'en',
+		supportedLngs: ['en', 'cs'],
+		debug: false,
+		nsSeparator: false
+	}
+};
+
+const modules = [];
+
+// The load event is fired when the whole page has loaded. Adds a class with which to set the colour from the variable
+window.addEventListener('load', (event) => {
+	document.body.classList.add('loaded')
+})
+
+// Load default modules
+import I18nModule from 'asab-webui/modules/i18n';
+modules.push(I18nModule);
+
+import TenantModule from 'asab-webui/modules/tenant';
+modules.push(TenantModule);
+
+import AuthModule from 'asab-webui/modules/auth';
+modules.push(AuthModule);
+
+import AboutModule from 'asab-webui/modules/about';
+modules.push(AboutModule);
+
+// Load custom modules
+import ConfigurationModule from './modules/configuration';
+modules.push(ConfigurationModule);
+
+// Render
+ReactDOM.render((
+	<HashRouter>
+		<Application modules={modules} defaultpath="/configuration/$/$" configdefaults={ConfigDefaults}/>
+	</HashRouter>
+), document.getElementById('app'));
