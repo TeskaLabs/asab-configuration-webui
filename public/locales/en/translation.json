@@ -19,9 +19,7 @@
 		"Change a password": "Change a password",
 		"Logout": "Logout"
 	},
-	"HelpButton": {
-		"Help": "Help"
-	},
+
 	"ASABConfig": {
 		"Nothing has been selected": "Nothing has been selected",
 		"Please select the configuration from tree menu on the left side of the screen": "Please select the configuration from tree menu on the left side of the screen",
@@ -70,12 +68,11 @@
 		"Merge": "Merge",
 		"Import configuration": "Import configuration",
 		"Failed to import library": "Failed to import library",
-		"Configuration has been successfully imported": "Configuration has been successfully imported"
-	},
-	"ASABConfigModule": {
+		"Configuration has been successfully imported": "Configuration has been successfully imported",
 		"Actions": "Actions",
 		"Search": "Search"
 	},
+
 	"ASABConfigService": {
 		"Incorrect/invalid config file downloaded": "Incorrect/invalid config file downloaded",
 		"Error when downloading a config file. The path might be corrupted": "Error when downloading a config file. The path might be corrupted"
@@ -103,67 +100,8 @@
 	"ASABCredentials": {
 		"Something went wrong, failed to fetch assigned credentials": "Something went wrong, failed to fetch assigned credentials"
 	},
-	"ASABLibraryModule": {
-		"Search": "Search",
-		"Failed to load data": "Failed to load data",
-		"Failed to load content of the file": "Failed to load content of the file",
-		"Enable file": "Enable file",
-		"Disable file": "Disable file",
-		"File was successfully enabled": "File was successfully enabled",
-		"File was successfully disabled": "File was successfully disabled",
-		"Failed to enable file": "Failed to enable file",
-		"Failed to disable file": "Failed to disable file",
-		"File has been updated": "File has been updated",
-		"Failed to update the file": "Failed to update the file",
-		"Are you sure you want to cancel changes?": "Are you sure you want to cancel changes?",
-		"Edit": "Edit",
-		"Save":"Save",
-		"Cancel": "Cancel",
-		"Download all": "Download all",
-		"Back": "Back",
-		"Actions": "Actions",
-		"Export": "Export",
-		"Import": "Import",
-		"Library has been successfully imported": "Library has been successfully imported",
-		"Failed to import library": "Failed to import library",
-		"Import library": "Import library",
-		"Filename": "Filename",
-		"Type": "Type",
-		"Override": "Override",
-		"Merge": "Merge",
-		"Only tar.gz files are allowed": "Only tar.gz files are allowed",
-		"Choose file": "Choose file"
-	},
-	"ServicesContainer": {
-		"Can't display data due to parsing error": "Can't display data due to parsing error",
-		"Can't establish websocket connection, data can't be loaded": "Can't establish websocket connection, data can't be loaded",
-		"Services": "Services",
-		"Filter state": "Filter state",
-		"Loading": "Loading",
-		"Service": "Service",
-		"Node ID": "Node ID",
-		"Name": "Name",
-		"Type": "Type",
-		"Version": "Version",
-		"Not defined": "Not defined",
-		"Running": "Running",
-		"Starting": "Starting",
-		"Stopped": "Stopped",
-		"Unknown": "Unknown",
-		"Service action accepted successfully": "Service action accepted successfully",
-		"Service action has been rejected": "Service action has been rejected",
-		"Un-collapse": "Un-collapse",
-		"Collapse": "Collapse",
-		"Start": "Start",
-		"Stop": "Stop",
-		"Restart": "Restart",
-		"Up": "Up",
-		"Return code": "Return code",
-		"Error": "Error",
-		"Exception": "Exception",
-		"Console": "Console",
-		"Detail": "Detail",
-		"Advertised data": "Advertised data"
+	"HelpButton": {
+		"Help": "Help"
 	},
 	"UserInterfaceCard": {
 		"User interface": "User interface",

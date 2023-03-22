@@ -19,9 +19,7 @@
 		"Change a password": "Změna hesla",
 		"Logout": "Odhlásit"
 	},
-	"HelpButton": {
-		"Help": "Nápověda"
-	},
+
 	"ASABConfig": {
 		"Nothing has been selected": "Zatím nebylo nic vybráno",
 		"Please select the configuration from tree menu on the left side of the screen": "Prosím vyberte konfiguraci z nabídky na levé straně obrazovky",
@@ -72,12 +70,11 @@
 		"Choose file": "Vyberte soubor",
 		"No file chosen": "Nebyl vybrán žádný soubor",
 		"Failed to import configuration": "Nepodařilo se importovat konfiguraci",
-		"Configuration has been successfully imported": "Konfigurace byla úspěšně importována"
-	},
-	"ASABConfigModule": {
+		"Configuration has been successfully imported": "Konfigurace byla úspěšně importována",
 		"Actions": "Akce",
 		"Search": "Hledat"
 	},
+
 	"ASABConfigService": {
 		"Incorrect/invalid config file downloaded": "Došlo ke stažení neplatné konfigurace",
 		"Error when downloading a config file. The path might be corrupted": "Chyba při stahování kofigurace. Cesta k souboru nemusí být správně"
@@ -105,67 +102,8 @@
 	"ASABCredentials": {
 		"Something went wrong, failed to fetch assigned credentials": "Něco je špatně, nepodařilo se získat přiřazené uživatelské údaje"
 	},
-	"ASABLibraryModule": {
-		"Search": "Search",
-		"Failed to load data": "Nepodařilo se načíst data",
-		"Failed to load content of the file": "Nepodařilo se načíst obsah souboru",
-		"Enable file": "Zapnout soubor",
-		"Disable file": "Vypnout soubor",
-		"File was successfully enabled": "Soubor byl úspěšně zapnut",
-		"File was successfully disabled": "Soubor byl úspěšně vypnut",
-		"Failed to enable file": "Soubor se nepodařilo povolit",
-		"Failed to disable file": "Soubor se nepodařilo zakázat",
-		"File has been updated": "Soubor byl aktualizován",
-		"Failed to update the file": "Aktualizace souboru se nezdařila",
-		"Are you sure you want to cancel changes?": "Opravdu chcete zrušit změny?",
-		"Edit": "Upravit",
-		"Save":"Uložit",
-		"Cancel": "Zrušit",
-		"Download all": "Stáhnout vše",
-		"Back": "Zpět",
-		"Actions": "Akce",
-		"Export": "Exportovat",
-		"Import": "Importovat",
-		"Library has been successfully imported": "Knihovna byla úspěšně importována",
-		"Failed to import library": "Nepodařilo se importovat knihovnu",
-		"Import library": "Import knihovny",
-		"Filename": "Název souboru",
-		"Type": "Typ",
-		"Override": "Přepsat",
-		"Merge": "Spojit",
-		"Only tar.gz files are allowed": "Povoleny jsou pouze soubory tar.gz",
-		"Choose file": "Vyberte soubor"
-	},
-	"ServicesContainer": {
-		"Can't display data due to parsing error": "Nelze zobrazit data kvůli chybě v parsování",
-		"Can't establish websocket connection, data can't be loaded": "Nepodařilo se navázat websocket spojení, data nelze načíst",
-		"Services": "Služby",
-		"Filter state": "Filtrovat stav",
-		"Loading": "Načítání",
-		"Service": "Služba",
-		"Node ID": "Node ID",
-		"Name": "Název",
-		"Type": "Typ",
-		"Version": "Verze",
-		"Not defined": "Neurčeno",
-		"Running": "Běží",
-		"Starting": "Spouští se",
-		"Stopped": "Zastaveno",
-		"Unknown": "Neznámo",
-		"Service action accepted successfully": "Akce služby byla spuštěna",
-		"Service action has been rejected": "Akce služby nebyla spuštěna",
-		"Un-collapse": "Rozbalit",
-		"Collapse": "Sbalit",
-		"Start": "Spustit",
-		"Stop": "Zastavit",
-		"Restart": "Restartovat",
-		"Up": "Nahodit",
-		"Return code": "Return code",
-		"Error": "Error",
-		"Exception": "Exception",
-		"Console": "Console",
-		"Detail": "Detail",
-		"Advertised data": "Advertised data"
+	"HelpButton": {
+		"Help": "Nápověda"
 	},
 	"UserInterfaceCard": {
 		"User interface": "Uživatelské rozhraní",
