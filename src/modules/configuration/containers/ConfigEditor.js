@@ -579,7 +579,6 @@ function ConfigEditor(props) {
 					<CardFooter>
 						<ButtonGroup>
 							<ButtonWithAuthz
-								outline
 								title={t("ASABConfig|Save")}
 								color="primary"
 								type="submit"
