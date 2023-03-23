@@ -27,7 +27,7 @@ let ConfigDefaults = {
 
 const modules = [];
 
-// The load event is fired when the whole page has loaded. Adds a class with which to set the colour from the variable
+// The load event is fired when the whole page has loaded. Adds classes which sets the styles
 window.addEventListener('load', (event) => {
 	document.body.classList.add('loaded')
 })

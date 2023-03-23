@@ -6,7 +6,7 @@ import asabConfigReducer from './containers/reducer';
 
 import "./containers/configuration.scss";
 
-export default class ConfigModule extends Module {
+export default class ConfigurationModule extends Module {
 	constructor(app, name) {
 		super(app, "ASABConfigModule");
 		// Using redux to update items in Coniguration right after the change
