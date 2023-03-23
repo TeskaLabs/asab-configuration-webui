@@ -158,14 +158,29 @@ function ConfigList(props) {
 
 	return (
 		<div className="config-list-dt">
-			<DataTable
-				customCardBodyComponent={<div>{`${description}`}</div>}
-				title={{ text: t("ASABConfig|Type") + ` ${configType}`, icon: "cil-settings" }}
-				headers={headers}
-				data={configList}
-				limit={99999}
-				customComponent={createConfigComponent}
-			/>
+			{configList && (configList.length > 0) ?
+				<DataTable
+					customCardBodyComponent={<div>{`${description}`}</div>}
+					title={{ text: t("ASABConfig|Type") + ` ${configType}`, icon: "cil-settings" }}
+					headers={headers}
+					data={configList}
+					limit={99999}
+					customComponent={createConfigComponent}
+				/>
+			:
+				<Card className="w-100 h-100">
+					<CardHeader className="border-bottom">
+						<div className="card-header-title">
+							<span className="cil-settings pr-2" />
+							{t("ASABConfig|Type") + ` ${configType}`}
+						</div>
+						{createConfigComponent}
+					</CardHeader>
+					<CardBody className="pt-2">
+						<div>{`${description}`}</div>
+					</CardBody>
+				</Card>
+			}
 		</div>
 	)
 }
