@@ -5,7 +5,8 @@ import {
 	CardBody, CardHeader, CardFooter, Row, Col,
 	Button, Input, Label,
 	FormGroup, FormText, InputGroup,
-	InputGroupText, Card, ButtonGroup
+	InputGroupText, Card, ButtonGroup,
+	FormFeedback
 } from 'reactstrap';
 import {types} from "./actions/actions";
 
@@ -14,7 +15,7 @@ const ConfigImport = (props) => {
 
 	const ASABConfigAPI = props.app.axiosCreate('asab_config');
 	const { t } = useTranslation();
-	const [chosenFilename, setChosenFilename] = useState("No file chosen");
+	const [chosenFilename, setChosenFilename] = useState(undefined);
 	const [type, setType] = useState("merge");
 	const [errors, setErrors] = useState(false);
 	const inputFileRef = useRef(null)
@@ -105,9 +106,13 @@ const ConfigImport = (props) => {
 						<FormGroup className="file-input">
 							<InputGroup onClick={chooseFile}>
 								<InputGroupText>{t("ASABConfig|Choose file")}</InputGroupText>
-								<Input type="text" readOnly={true} value={t(`ASABConfig|${chosenFilename}`)} />
+								<Input type="text" readOnly={true} invalid={errors} value={
+									chosenFilename ? t(`ASABConfig|${chosenFilename}`) : t(`ASABConfig|No file chosen`)}  />
 							</InputGroup>
-							<FormText color={errors ? "danger" : ""}>{t("ASABConfig|Only tar.gz files are allowed")}</FormText>
+							{
+								errors ? <FormFeedback className="error-message">{t("ASABConfig|Only tar.gz files are allowed")}</FormFeedback>
+								: <FormText>{t("ASABConfig|Only tar.gz files are allowed")}</FormText>
+							}
 						</FormGroup>
 
 						<Col>
@@ -142,6 +147,7 @@ const ConfigImport = (props) => {
 				<CardFooter>
 					<ButtonGroup>
 						<Button
+							title={errors ? t("ASABConfig|Incorrect file type") : !chosenFilename ? t("ASABConfig|No file chosen") : null}
 							type="submit"
 							color="primary"
 							disabled={errors || !chosenFilename}

@@ -81,7 +81,8 @@
 		"Failed to import library": "Failed to import library",
 		"Configuration has been successfully imported": "Configuration has been successfully imported",
 		"Actions": "Actions",
-		"Search": "Search"
+		"Search": "Search",
+		"Incorrect file type": "Incorrect file type"
 	},
 	"HomeContainer": {
 		"Welcome to ASAB Configuration": "Welcome to ASAB Configuration"

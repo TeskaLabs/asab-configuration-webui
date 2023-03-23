@@ -50,7 +50,7 @@ function ConfigEditor(props) {
 	const [ configNotExist, setConfigNotExist ] = useState(false);
 	const [ activeTab, setActiveTab ] = useState('basic');
 
-	const resourceManageConfig = "lmio:config:edit";
+	const resourceManageConfig = "lmio:config:edit"; // TODO: resource may change
 	const resources = useSelector(state => state.auth?.resources);
 	const theme = useSelector(state => state?.theme);
 
@@ -746,7 +746,7 @@ function ConfigAdHocSection(props) {
 							value={props.values[key]}
 							readOnly
 						/>
-						<FormText color="muted">
+						<FormText>
 							{t('ASABConfig|Read only')}
 						</FormText>
 					</FormGroup>

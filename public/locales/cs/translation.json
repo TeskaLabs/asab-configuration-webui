@@ -83,7 +83,8 @@
 		"Failed to import configuration": "Nepodařilo se importovat konfiguraci",
 		"Configuration has been successfully imported": "Konfigurace byla úspěšně importována",
 		"Actions": "Akce",
-		"Search": "Hledat"
+		"Search": "Hledat",
+		"Incorrect file type": "Nesprávný typ souboru"
 	},
 	"HomeContainer": {
 		"Welcome to ASAB Configuration": "Vítejte v ASAB Configuration"

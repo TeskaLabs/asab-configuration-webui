@@ -7,7 +7,8 @@ import { useSelector } from 'react-redux';
 import {
 	Button,
 	Card, CardBody, CardHeader, CardFooter,
-	Form, FormGroup, FormText, Input, Label
+	Form, FormGroup, FormText, Input, Label,
+	FormFeedback
 } from "reactstrap";
 
 import {types} from './actions/actions';
@@ -23,7 +24,7 @@ function ConfigList(props) {
 	const [ configList, setConfigList ] = useState([]);
 	const [ description, setDescription ] = useState("");
 
-	const resourceManageConfig = "lmio:config:edit";
+	const resourceManageConfig = "lmio:config:edit"; // TODO: resource may change
 	const resources = useSelector(state => state.auth?.resources);
 
 	const configType = props.configType;
@@ -222,13 +223,20 @@ function CreateConfigCard(props) {
 	}
 
 	return(
-		<Form onSubmit={handleSubmit(onSubmit)}>
-			<Card className="w-75 offset-md-2">
+		<Form className="h-100" onSubmit={handleSubmit(onSubmit)}>
+			<Card className="w-100 h-100">
 				<CardHeader className="border-bottom">
 					<div className="card-header-title">
 						<span className="cil-settings pr-2" />
 						{t("ASABConfig|Type") + ` ${props.configType.toString()} / ` + t('ASABConfig|New configuration')}
 					</div>
+					<Button
+						color="primary"
+						type="submit"
+						disabled={isSubmitting}
+					>
+						{t('ASABConfig|Save')}
+					</Button>
 				</CardHeader>
 				<CardBody>
 					<FormGroup tag="fieldset" disabled={isSubmitting}>
@@ -243,21 +251,18 @@ function CreateConfigCard(props) {
 							innerRef={regConfigName.ref}
 							onChange={regConfigName.onChange}
 							onBlur={regConfigName.onBlur}
+							invalid={errors.configName && true}
 						/>
-						<FormText color={errors.configName ? "danger" : "muted"}>
-							{errors.configName ? errors.configName.message : t('ASABConfig|Fill out configuration name')}
-						</FormText>
+						{errors.configName ?
+						<FormFeedback className="error-message">
+							{errors.configName.message}
+						</FormFeedback>
+						:
+						<FormText>
+							{t('ASABConfig|Fill out configuration name')}
+						</FormText>}
 					</FormGroup>
 				</CardBody>
-				<CardFooter>
-					<Button
-						color="primary"
-						type="submit"
-						disabled={isSubmitting}
-					>
-						{t('ASABConfig|Create')}
-					</Button>
-				</CardFooter>
 			</Card>
 		</Form>
 		)

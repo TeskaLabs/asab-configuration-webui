@@ -23,7 +23,7 @@ export function TreeViewComponent(props) {
 
 	// Obtain resources from state (if available)
 	const resources = useSelector(state => state.auth?.resources);
-	const resource = "lmio:config:edit";
+	const resource = "lmio:config:edit"; // TODO: resource may change
 
 	useEffect(() => {
 		if (props.configCreated || props.configRemoved) {

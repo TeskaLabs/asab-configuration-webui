@@ -90,7 +90,7 @@ export function ConfigItem(props) {
 				onChange={reg.onChange}
 				onBlur={reg.onBlur}
 			/>
-			<FormText color="muted">
+			<FormText>
 				{props.item['description']}
 			</FormText>
 		</FormGroup>
@@ -125,7 +125,7 @@ export function NumberConfigItem(props) {
 					onChange={reg.onChange}
 					onBlur={reg.onBlur}
 				/>
-				<FormText color="muted">
+				<FormText>
 					{props.item['description']}
 				</FormText>
 			</FormGroup>
@@ -151,7 +151,7 @@ export function UrlConfigItem(props) {
 				onChange={reg.onChange}
 				onBlur={reg.onBlur}
 			/>
-			<FormText color="muted">
+			<FormText>
 				{props.item['description']}
 			</FormText>
 		</FormGroup>
@@ -176,7 +176,7 @@ export function EmailConfigItem(props) {
 				onChange={reg.onChange}
 				onBlur={reg.onBlur}
 			/>
-			<FormText color="muted">
+			<FormText>
 				{props.item['description']}
 			</FormText>
 		</FormGroup>
@@ -201,7 +201,7 @@ export function PasswordConfigItem(props) {
 				onChange={reg.onChange}
 				onBlur={reg.onBlur}
 			/>
-			<FormText color="muted">
+			<FormText>
 				{props.item['description']}
 			</FormText>
 		</FormGroup>
@@ -228,7 +228,7 @@ export function CheckBoxConfigItem(props) {
 				onBlur={reg.onBlur}
 			/>
 			<br />
-			<FormText color="muted">
+			<FormText>
 				{props.item['description']}
 			</FormText>
 		</FormGroup>
@@ -272,7 +272,7 @@ export function RadioButtonConfigItem(props) {
 					/>{' '}
 					False
 				</Label>
-				<FormText color="muted">
+				<FormText>
 					{props.item['description']}
 				</FormText>
 			</FormGroup>
@@ -301,7 +301,7 @@ export function SelectConfigItem(props) {
 					<option key={idx} value={val}>{val}</option>
 				)}) : null}
 			</Input>
-			<FormText color="muted">
+			<FormText>
 				{props.item['description']}
 			</FormText>
 		</FormGroup>
@@ -325,7 +325,7 @@ export function TextAreaConfigItem(props) {
 				onChange={reg.onChange}
 				onBlur={reg.onBlur}
 			/>
-			<FormText color="muted">
+			<FormText>
 				{props.item['description']}
 			</FormText>
 		</FormGroup>
@@ -350,7 +350,7 @@ export function ConfigAdHocItem(props) {
 							value={Object.values(obj)}
 							readOnly
 						/>
-						<FormText color="muted">
+						<FormText>
 							{t('ASABConfig|Read only')}
 						</FormText>
 					</FormGroup>
@@ -369,7 +369,7 @@ export function ConfigAdHocItem(props) {
 						value={Object.values(props.values[0])}
 						readOnly
 					/>
-					<FormText color="muted">
+					<FormText>
 						{t('ASABConfig|Read only')}
 					</FormText>
 				</FormGroup>
