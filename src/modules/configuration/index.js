@@ -29,7 +29,7 @@ export default class ConfigurationModule extends Module {
 					name: "Configuration",
 					url: "/configuration/$/$",
 					icon: "cil-settings",
-					resource: 'lmio:config:access' //TODO: resource may change
+					resource: 'asab:config:access'
 				});
 				isMaintenancePresent = true;
 			}
@@ -45,7 +45,7 @@ export default class ConfigurationModule extends Module {
 						name: "Configuration",
 						url: "/configuration/$/$",
 						icon: "cil-settings",
-						resource: 'lmio:config:access' //TODO: resource may change
+						resource: 'asab:config:access'
 					}
 				]
 			});
