@@ -86,9 +86,6 @@
 		"Search": "Hledat",
 		"Incorrect file type": "Nesprávný typ souboru"
 	},
-	"HomeContainer": {
-		"Welcome to ASAB Configuration": "Vítejte v ASAB Configuration"
-	},
 
 	"ASABConfigService": {
 		"Incorrect/invalid config file downloaded": "Došlo ke stažení neplatné konfigurace",

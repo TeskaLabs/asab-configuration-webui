@@ -84,9 +84,6 @@
 		"Search": "Search",
 		"Incorrect file type": "Incorrect file type"
 	},
-	"HomeContainer": {
-		"Welcome to ASAB Configuration": "Welcome to ASAB Configuration"
-	},
 
 	"ASABConfigService": {
 		"Incorrect/invalid config file downloaded": "Incorrect/invalid config file downloaded",
