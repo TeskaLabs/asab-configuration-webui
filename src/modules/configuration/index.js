@@ -17,6 +17,7 @@ export default class ConfigurationModule extends Module {
 			exact: true,
 			name: "Configuration",
 			component: ConfigContainer,
+			resource: 'asab:config:access'
 		});
 
 		// Check presence of Maintenance item in sidebar

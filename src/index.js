@@ -52,6 +52,6 @@ modules.push(ConfigurationModule);
 // Render
 ReactDOM.render((
 	<HashRouter>
-		<Application modules={modules} defaultpath="/configuration" configdefaults={ConfigDefaults}/>
+		<Application modules={modules} defaultpath="/configuration/$/$" configdefaults={ConfigDefaults}/>
 	</HashRouter>
 ), document.getElementById('app'));
