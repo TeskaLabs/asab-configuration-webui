@@ -24,9 +24,9 @@ function ConfigContainer(props) {
 	const configName = props.match.params.configName;
 
 	const theme = useSelector(state => state.theme);
-	const configCreated = useSelector(state => state.asab_config.config_created);
-	const configRemoved = useSelector(state => state.asab_config.config_removed);
-	const configImported = useSelector(state => state.asab_config.config_imported);
+	const configCreated = useSelector(state => state.asab_configuration.config_created);
+	const configRemoved = useSelector(state => state.asab_configuration.config_removed);
+	const configImported = useSelector(state => state.asab_configuration.config_imported);
 
 	const homeScreenAlt = props.app.Config.get('title');
 

@@ -10,7 +10,7 @@ export default class ConfigurationModule extends Module {
 	constructor(app, name) {
 		super(app, "ASABConfigModule");
 		// Using redux to update items in Coniguration right after the change
-		app.ReduxService.addReducer("asab_config", asabConfigReducer);
+		app.ReduxService.addReducer("asab_configuration", asabConfigReducer);
 
 		app.Router.addRoute({
 			path: "/configuration/:configType/:configName",
