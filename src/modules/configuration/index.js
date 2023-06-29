@@ -1,6 +1,7 @@
 import React, { Component, lazy } from 'react';
 import Module from 'asab-webui/abc/Module';
-const ConfigContainer = lazy(() => import("./containers/ConfigContainer"));
+import { componentLoader } from 'asab-webui';
+const ConfigContainer = lazy(() => componentLoader(() => import("./containers/ConfigContainer")));
 
 import asabConfigReducer from './containers/reducer';
 
