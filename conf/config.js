@@ -15,13 +15,13 @@ module.exports = {
 	webpackDevServer: {
 		port: 3010,
 		proxy: {
-			'/api/seacat_auth': {
+			'/api/seacat-auth': {
 				target: "http://localhost:8080",
-				pathRewrite: { '^/api/seacat_auth': ''}
+				pathRewrite: { '^/api/seacat-auth': ''}
 			},
-			'/api/asab_config': {
+			'/api/asab-config': {
 				target: "http://localhost:8082",
-				pathRewrite: {'^/api/asab_config': ''}
+				pathRewrite: {'^/api/asab-config': ''}
 			}
 		}
 	}
